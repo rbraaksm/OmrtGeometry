@@ -1,5 +1,5 @@
 ﻿using System;
-using OmrtGeometry.src;
+using OmrtGeometry.Geometry;
 
 namespace OmrtGeometry
 {
@@ -7,10 +7,15 @@ namespace OmrtGeometry
     {
         static void Main(string[] args)
         {
-            Point3d extra = new Point3d(1, 2, 3);
-            Point3d test = extra;
+            Vector3d extra = new Vector3d(0, 0, 0);
 
-            Console.WriteLine(test.X + "  " + test.Y + "  " + test.Z);
+            Console.WriteLine(extra.X + "  " + extra.Y + "  " + extra.Z);
+
+            Console.WriteLine(extra.IsUnitVector);
+            Console.WriteLine(extra.IsValid);
+            Console.WriteLine(extra.IsZero);
+
+
         }
     }
 }

@@ -12,7 +12,4 @@
   <ItemGroup>
     <PackageReference Include="GShark" Version="1.5.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\" />
-  </ItemGroup>
 </Project>

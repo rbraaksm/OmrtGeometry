@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OmrtGeometry.src
+namespace OmrtGeometry.Geometry
 {
     public class Point3d
     {
@@ -45,6 +45,35 @@ namespace OmrtGeometry.src
             }
         }
 
+        /// <summary>
+        /// Gets the largest (both positive and negative) valid coordinate in this point, or RhinoMath.UnsetValue if no coordinate is valid.
+        /// </summary>
+        public double MaximumCoordinate
+        {
+            get
+            {
+                if (this.IsValid)
+                {
+                    return Math.Max(Math.Max(Math.Abs(X), Math.Abs(Y)), Math.Abs(Z));
+                }
+                return OGMath.UnsetValue;
+            }
+        }
+
+        /// <summary>
+        /// Gets the smallest (both positive and negative) coordinate value in this point.
+        /// </summary>
+        public double MinimunCoordinate
+        {
+            get
+            {
+                if (this.IsValid)
+                {
+                    return Math.Min(Math.Min(Math.Abs(X), Math.Abs(Y)), Math.Abs(Z));
+                }
+                return OGMath.UnsetValue;
+            }
+        }
 
         /// <summary>
         /// Gets the value of a point at location 0,0,0.
@@ -93,6 +122,5 @@ namespace OmrtGeometry.src
             Y = y;
             Z = z;
         }
-
     }
 }

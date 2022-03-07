@@ -1,5 +1,5 @@
 ﻿using System;
-namespace OmrtGeometry.src
+namespace OmrtGeometry.Geometry
 {
     public class OGMath
     {
