@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lRTtlPjrMkFXAqqfcm9sUmJhV8mNTuo/WXsrfs00yHHm4EyTRRyHDboyShe0CcPWaGOctAGKhlYiFpcGmX5IWg==",
+  "success": true,
+  "projectFilePath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
+  "expectedPackageFiles": [
+    "/Users/renebraaksma/.nuget/packages/gshark/1.5.0/gshark.1.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
