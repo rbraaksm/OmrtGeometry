@@ -70,9 +70,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
-      "projectName": "OmrtGeometry",
-      "projectPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
+      "projectUniqueName": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OG.csproj",
+      "projectName": "OG",
+      "projectPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OG.csproj",
       "packagesPath": "C:\\Users\\OMRT\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\obj\\",
       "projectStyle": "PackageReference",
