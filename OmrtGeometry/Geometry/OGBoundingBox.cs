@@ -1,35 +1,41 @@
 ﻿using System;
+
 namespace OmrtGeometry.Geometry
 {
-    public class OGMath
+    public class OGBoundingBox
     {
-        /// <summary>
-        /// The value of an unset object.
-        /// </summary>
-        public const double UnsetValue = -1.23432101234321E+308;
-
-        public OGMath(){}
+        // PROPERTIES
 
         /// <summary>
-        /// Returns true if the double value is valid.
+        /// Gets or sets the point in the minimal corner
         /// </summary>
-        /// <param name="x">Double value.</param>
-        /// <returns>True if it is valid.</returns>
-        public static bool IsValidDouble(double x)
+        public OGPoint3d Min { get; set; }
+
+        /// <summary>
+        /// Gets or sets the point in the maximal corner
+        /// </summary>
+        public OGPoint3d Max { get; set; }
+
+        /// <summary>
+        /// Gets a bounding box that has Unset coordinates for Min and Max
+        /// </summary>
+        public static OGBoundingBox Unset => new OGBoundingBox(OGPoint3d.Unset, OGPoint3d.Unset);
+
+        // CONSTRUCTORS
+
+        /// <summary>
+        /// Constructs a new bounding box from two corner points
+        /// </summary>
+        public OGBoundingBox(OGPoint3d min, OGPoint3d max)
         {
-            return Math.Abs(x - UnsetValue) > double.Epsilon && !double.IsInfinity(x) && !double.IsNaN(x);
+            Min = min;
+            Max = max;
         }
 
         /// <summary>
-        /// Comparing two values. If value1 < value2 return -1 else 1
+        /// Constructs a new bounding box from numeric extremes
         /// </summary>
-        public static int ComparingValues(double value1, double value2)
-        {
-            if (value1 < value2)
-            {
-                return -1;
-            }
-            return 1;
-        }
+        public OGBoundingBox(double minX, double minY, double minZ, double maxX, double maxY, double maxZ) : this(new OGPoint3d(minX, minY, minZ), new OGPoint3d(maxX, maxY, maxZ))
+        { }
     }
 }
