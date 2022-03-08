@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "lRTtlPjrMkFXAqqfcm9sUmJhV8mNTuo/WXsrfs00yHHm4EyTRRyHDboyShe0CcPWaGOctAGKhlYiFpcGmX5IWg==",
+  "dgSpecHash": "NnWpd3WKY/KT/EaVnEnUJiLydA3X4rLX7Wvs+Hd1PcKpzselft3u/gGmUbfwnFWOkszB+3fKC5U0rrOHXscnMw==",
   "success": true,
-  "projectFilePath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
+  "projectFilePath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
   "expectedPackageFiles": [
-    "/Users/renebraaksma/.nuget/packages/gshark/1.5.0/gshark.1.5.0.nupkg.sha512"
+    "C:\\Users\\OMRT\\.nuget\\packages\\gshark\\1.5.0\\gshark.1.5.0.nupkg.sha512",
+    "C:\\Users\\OMRT\\.nuget\\packages\\rhino3dmio.desktop\\7.1.20343.9491\\rhino3dmio.desktop.7.1.20343.9491.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rhino3dmIO.Desktop 7.1.20343.9491' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rhino3dmIO.Desktop",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

@@ -10,6 +10,18 @@
         "runtime": {
           "lib/netstandard2.0/GShark.dll": {}
         }
+      },
+      "Rhino3dmIO.Desktop/7.1.20343.9491": {
+        "type": "package",
+        "compile": {
+          "ref/net45/Rhino3dmIO.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Rhino3dmIO.dll": {}
+        },
+        "build": {
+          "build/net45/Rhino3dmIO.Desktop.targets": {}
+        }
       }
     }
   },
@@ -26,32 +38,53 @@
         "gshark.nuspec",
         "lib/netstandard2.0/GShark.dll"
       ]
+    },
+    "Rhino3dmIO.Desktop/7.1.20343.9491": {
+      "sha512": "3/Q54+Lxd2yDp+RjKyqEfDwi+/dPuVTmU3aNUZ+VRyJtmDX0RU/2hjvwNSI6Z7X7DOm5IPOTfNyRv5z06VCYzg==",
+      "type": "package",
+      "path": "rhino3dmio.desktop/7.1.20343.9491",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net45/Rhino3dmIO.Desktop.targets",
+        "build/net45/Win32/librhino3dmio_native.dll",
+        "build/net45/Win64/librhino3dmio_native.dll",
+        "build/net45/librhino3dmio_native.dylib",
+        "lib/net45/Rhino3dmIO.dll",
+        "ref/net45/Rhino3dmIO.dll",
+        "rhino3dmio.desktop.7.1.20343.9491.nupkg.sha512",
+        "rhino3dmio.desktop.nuspec",
+        "rhino3dmio.png"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "GShark >= 1.5.0"
+      "GShark >= 1.5.0",
+      "Rhino3dmIO.Desktop >= 7.1.20343.9491"
     ]
   },
   "packageFolders": {
-    "/Users/renebraaksma/.nuget/packages/": {}
+    "C:\\Users\\OMRT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
+      "projectUniqueName": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
       "projectName": "OmrtGeometry",
-      "projectPath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
-      "packagesPath": "/Users/renebraaksma/.nuget/packages/",
-      "outputPath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/obj/",
+      "projectPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
+      "packagesPath": "C:\\Users\\OMRT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/renebraaksma/.config/NuGet/NuGet.Config"
+        "C:\\Users\\OMRT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -73,6 +106,10 @@
           "GShark": {
             "target": "Package",
             "version": "[1.5.0, )"
+          },
+          "Rhino3dmIO.Desktop": {
+            "target": "Package",
+            "version": "[7.1.20343.9491, )"
           }
         },
         "imports": [
@@ -90,8 +127,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Rhino3dmIO.Desktop 7.1.20343.9491' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Rhino3dmIO.Desktop",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

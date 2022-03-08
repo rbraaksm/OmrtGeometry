@@ -11,5 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GShark" Version="1.5.0" />
+    <PackageReference Include="Rhino3dmIO.Desktop" Version="7.1.20343.9491" />
   </ItemGroup>
 </Project>

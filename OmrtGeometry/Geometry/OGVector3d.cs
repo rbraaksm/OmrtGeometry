@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace OmrtGeometry.Geometry
+namespace OG
 {
-    public class OGVector3d
+    public class Vector3d
     {
         // Properties
 
@@ -103,7 +103,7 @@ namespace OmrtGeometry.Geometry
         /// <summary>
         /// Gets the value of the vector with each component set to RhinoMath.UnsetValue.
         /// </summary>
-        public static OGVector3d Unset => new OGVector3d(OGMath.UnsetValue, OGMath.UnsetValue, OGMath.UnsetValue);
+        public static Vector3d Unset => new Vector3d(OGMath.UnsetValue, OGMath.UnsetValue, OGMath.UnsetValue);
 
         /// <summary>
         /// Gets or sets the X (first) coordinate of this point.
@@ -113,7 +113,7 @@ namespace OmrtGeometry.Geometry
         /// <summary>
         /// Gets the value of the vector with components 1,0,0.
         /// </summary>
-        public static OGVector3d XAxis => new OGVector3d(1.0, 0.0, 0.0);
+        public static Vector3d XAxis => new Vector3d(1.0, 0.0, 0.0);
 
         /// <summary>
         /// Gets or sets the Y (second) coordinate of this point.
@@ -123,7 +123,7 @@ namespace OmrtGeometry.Geometry
         /// <summary>
         /// Gets the value of the vector with components 0,1,0.
         /// </summary>
-        public static OGVector3d YAxis => new OGVector3d(0.0, 1.0, 0.0);
+        public static Vector3d YAxis => new Vector3d(0.0, 1.0, 0.0);
         /// <summary>
         /// Gets or sets the Z (third) coordinate of this point.
         /// </summary>
@@ -132,12 +132,12 @@ namespace OmrtGeometry.Geometry
         /// <summary>
         /// Gets the value of the vector with components 0,0,1.
         /// </summary>
-        public static OGVector3d ZAxis => new OGVector3d(0.0, 0.0, 1.0);
+        public static Vector3d ZAxis => new Vector3d(0.0, 0.0, 1.0);
 
         /// <summary>
         /// Gets the value of the vector with components 0,0,0.
         /// </summary>
-        public static OGVector3d Zero => new OGVector3d(0, 0, 0);
+        public static Vector3d Zero => new Vector3d(0, 0, 0);
 
         // Constructors
 
@@ -145,14 +145,14 @@ namespace OmrtGeometry.Geometry
         /// Initializes a new vector by copying coordinates from a point.
         /// </summary>
         /// <param name="point">A point.</param>
-        public OGVector3d(OGPoint3d point) : this(point.X, point.Y, point.Z)
+        public Vector3d(Point3d point) : this(point.X, point.Y, point.Z)
         {}
 
         /// <summary>
         /// Initializes a new vector by copying coordinates from another vector.
         /// </summary>
         /// <param name="vector">A point.</param>
-        public OGVector3d(OGVector3d vector) : this(vector.X, vector.Y, vector.Z)
+        public Vector3d(Vector3d vector) : this(vector.X, vector.Y, vector.Z)
         { }
 
         /// <summary>
@@ -161,7 +161,7 @@ namespace OmrtGeometry.Geometry
         /// <param name="x">The value of the X (first) coordinate.</param>
         /// <param name="y">The value of the Y (second) coordinate.</param>
         /// <param name="z">The value of the Z (third) coordinate.</param>
-        public OGVector3d(double x, double y, double z)
+        public Vector3d(double x, double y, double z)
         {
             X = x;
             Y = y;
@@ -211,7 +211,7 @@ namespace OmrtGeometry.Geometry
             return 0.0;
         }
 
-        public int CompareTo(OGVector3d other)
+        public int CompareTo(Vector3d other)
         {
             if (X == other.X && Y == other.Y && Z == other.Z)
             {

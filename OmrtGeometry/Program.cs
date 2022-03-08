@@ -1,5 +1,9 @@
 ﻿using System;
-using OmrtGeometry.Geometry;
+using OGPoint3d = OG.Point3d;
+using OGBoundingBox = OG.BoundingBox;
+
+using Point3d = Rhino.Geometry.Point3d;
+using BoundingBox = Rhino.Geometry.BoundingBox;
 
 namespace OmrtGeometry
 {
@@ -8,12 +12,13 @@ namespace OmrtGeometry
 
         static void Main(string[] args)
         {
-            GShark.Geometry.Point3 extra = new GShark.Geometry.Point3(20, 30, 50);
+            OGPoint3d min = new OGPoint3d(2,0,0);
+            OGPoint3d max = new OGPoint3d(10,10,10);
 
-            OGVector3d test1 = new OGVector3d(3, 5, 6);
-            OGVector3d test2 = new OGVector3d(4, 5, 6);
+            OGBoundingBox bb = new OGBoundingBox(min, max);
 
-            Console.WriteLine(test1.CompareTo(test2));
+            Point3d test = new Point3d(0, 0, 0);
+            Console.WriteLine(bb.Area);
         }
     }
 }
