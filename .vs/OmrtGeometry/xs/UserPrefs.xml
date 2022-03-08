@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{21F7D819-86D5-466F-964A-57549557D832}|Default">
+  <MonoDevelop.Ide.ItemProperties.OmrtGeometry PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OmrtGeometry/Geometry/OGBoundingBox.cs">
+    <Files>
+      <File FileName="OmrtGeometry/Program.cs" Line="16" Column="55" />
+      <File FileName="OmrtGeometry/Geometry/Vector3d.cs" Line="5" Column="28" />
+      <File FileName="OmrtGeometry/Geometry/OGBoundingBox.cs" Line="2" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OmrtGeometry" expanded="True">
+            <Node name="OmrtGeometry" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Geometry" expanded="True">
+                <Node name="OGBoundingBox.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

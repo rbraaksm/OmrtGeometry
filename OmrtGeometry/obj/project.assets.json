@@ -34,26 +34,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\OMRT\\.nuget\\packages\\": {}
+    "/Users/renebraaksma/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
+      "projectUniqueName": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
       "projectName": "OmrtGeometry",
-      "projectPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OmrtGeometry.csproj",
-      "packagesPath": "C:\\Users\\OMRT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\obj\\",
+      "projectPath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/OmrtGeometry.csproj",
+      "packagesPath": "/Users/renebraaksma/.nuget/packages/",
+      "outputPath": "/Users/renebraaksma/Desktop/OmrtGeometry/OmrtGeometry/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\OMRT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/renebraaksma/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -92,7 +90,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }
