@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\OMRT\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\OMRT\\.nuget\\packages"
+    ]
+  }
+}

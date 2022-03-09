@@ -10,7 +10,6 @@ C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\bin\Debug\net5.0\ref\OG.dll
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\bin\Debug\net5.0\OG.pdb
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\bin\Debug\net5.0\GShark.dll
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\bin\Debug\net5.0\Rhino3dmIO.dll
-C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\obj\Debug\net5.0\OG.csproj.AssemblyReference.cache
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\obj\Debug\net5.0\OG.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\obj\Debug\net5.0\OG.AssemblyInfoInputs.cache
 C:\Users\OMRT\Desktop\OmrtGeometry\OmrtGeometry\obj\Debug\net5.0\OG.AssemblyInfo.cs

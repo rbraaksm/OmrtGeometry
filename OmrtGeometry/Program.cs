@@ -9,7 +9,6 @@ namespace OmrtGeometry
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             OGPoint3d min = new OGPoint3d(2,0,0);
