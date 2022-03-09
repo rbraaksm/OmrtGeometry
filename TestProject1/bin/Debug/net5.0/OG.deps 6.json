@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "OG/1.0.0": {
+        "dependencies": {
+          "GShark": "1.5.0",
+          "Rhino3dmIO.Desktop": "7.1.20343.9491"
+        },
+        "runtime": {
+          "OG.dll": {}
+        }
+      },
+      "GShark/1.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/GShark.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        }
+      },
+      "Rhino3dmIO.Desktop/7.1.20343.9491": {
+        "runtime": {
+          "lib/net45/Rhino3dmIO.dll": {
+            "assemblyVersion": "7.1.20343.1000",
+            "fileVersion": "7.1.20343.1000"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OG/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GShark/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yHUyJTJvnmEdCqQS6EWcWiWVIFeLHVIlm8Nv+UdB29FI4sJ1GTz/lAjckC7ZWJd+1Wa7Tw3rXhGr+6OaHir4Yg==",
+      "path": "gshark/1.5.0",
+      "hashPath": "gshark.1.5.0.nupkg.sha512"
+    },
+    "Rhino3dmIO.Desktop/7.1.20343.9491": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3/Q54+Lxd2yDp+RjKyqEfDwi+/dPuVTmU3aNUZ+VRyJtmDX0RU/2hjvwNSI6Z7X7DOm5IPOTfNyRv5z06VCYzg==",
+      "path": "rhino3dmio.desktop/7.1.20343.9491",
+      "hashPath": "rhino3dmio.desktop.7.1.20343.9491.nupkg.sha512"
+    }
+  }
+}

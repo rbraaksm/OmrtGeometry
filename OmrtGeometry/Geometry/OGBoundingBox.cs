@@ -9,7 +9,17 @@ namespace OG
         /// <summary>
         /// Gets the area of this bounding box
         /// </summary>
-        public double Area => (2 * ((Max.X - Min.X) * (Max.Z - Min.Z))) + (2 * ((Max.Y - Min.Y) * (Max.Z - Min.Z)) + (2 * (Max.X - Min.X) * (Max.Y - Min.Y))); 
+        public double Area
+        {
+            get
+            {
+                if (IsValid)
+                {
+                    return (2 * ((Max.X - Min.X) * (Max.Z - Min.Z))) + (2 * ((Max.Y - Min.Y) * (Max.Z - Min.Z)) + (2 * (Max.X - Min.X) * (Max.Y - Min.Y)));
+                }
+                return 0;
+            }
+        }
 
         /// <summary>
         /// Gets the point in the center of the bounding box

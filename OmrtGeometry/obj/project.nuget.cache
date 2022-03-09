@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TbfAkpoMs4xzIZc0eahaA183q6YFBxUqBNVOgcFDZX4S4JqYKsTojuA/Ihi8oa1T+CjVYmDBxxchFIH9nUIeQA==",
+  "dgSpecHash": "GCOzO+4RaMC8v0pXFBZm7OvNsxim1jKVuIGdApmUFmaPJpk+ms1mND9ZmqPPrBIoinsWZAzOdEyZbfDU9FLJFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OMRT\\Desktop\\OmrtGeometry\\OmrtGeometry\\OG.csproj",
+  "projectFilePath": "/Users/renebraaksma/Desktop/OG/OmrtGeometry/OG.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\OMRT\\.nuget\\packages\\gshark\\1.5.0\\gshark.1.5.0.nupkg.sha512",
-    "C:\\Users\\OMRT\\.nuget\\packages\\rhino3dmio.desktop\\7.1.20343.9491\\rhino3dmio.desktop.7.1.20343.9491.nupkg.sha512"
+    "/Users/renebraaksma/.nuget/packages/gshark/1.5.0/gshark.1.5.0.nupkg.sha512",
+    "/Users/renebraaksma/.nuget/packages/rhino3dmio.desktop/7.1.20343.9491/rhino3dmio.desktop.7.1.20343.9491.nupkg.sha512"
   ],
   "logs": [
     {

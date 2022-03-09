@@ -27,123 +27,102 @@ namespace OGTests
         }
 
         [Fact]
-        public static void ConstructorDoubleDoubleDoublePositive()
+        public void ConstructorDoubleDoubleDoublePositive()
         {
-            Data data = new Data();
-            Random rand = new Random();
+            double[] values = data.getNBPos(0, 12);
 
-            double x = data.nbPos[rand.Next(0, 12)];
-            double y = data.nbPos[rand.Next(0, 12)];
-            double z = data.nbPos[rand.Next(0, 12)];
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
-
-            comparePointProperties(OGvec, vec);
+            comparePointProperties(OGpoint, point);
         }
 
         [Fact]
         public void ConstructorDoubleDoubleDoubleNegative()
         {
-            double x = data.nbNeg[rand.Next(0, 12)];
-            double y = data.nbNeg[rand.Next(0, 12)];
-            double z = data.nbNeg[rand.Next(0, 12)];
+            double[] values = data.getNBNeg(0, 12);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            comparePointProperties(OGvec, vec);
+            comparePointProperties(OGpoint, point);
         }
 
         [Fact]
         public void ConstructorDoubleDoubleDoubleMiX()
         {
-            double x = data.nbMix[rand.Next(0, 12)];
-            double y = data.nbMix[rand.Next(0, 12)];
-            double z = data.nbMix[rand.Next(0, 12)];
+            double[] values = data.getNBMix(0, 12);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            comparePointProperties(OGvec, vec);
+            comparePointProperties(OGpoint, point);
         }
 
         [Fact]
         public void ConstructorPointPositive()
         {
-            double x = data.nbPos[rand.Next(0, 12)];
-            double y = data.nbPos[rand.Next(0, 12)];
-            double z = data.nbPos[rand.Next(0, 12)];
+            double[] values = data.getNBPos(0, 12);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
+            comparePointProperties(new OGPoint3d(OGpoint), new Point3d(point));
         }
 
         [Fact]
         public void ConstructorPointNegative()
         {
-            double x = data.nbNeg[rand.Next(0, 12)];
-            double y = data.nbNeg[rand.Next(0, 12)];
-            double z = data.nbNeg[rand.Next(0, 12)];
+            double[] values = data.getNBNeg(0, 12);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
+            comparePointProperties(new OGPoint3d(OGpoint), new Point3d(point));
         }
 
         [Fact]
         public void ConstructorPointMix()
         {
-            double x = data.nbMix[rand.Next(0, 12)];
-            double y = data.nbMix[rand.Next(0, 12)];
-            double z = data.nbMix[rand.Next(0, 12)];
+            double[] values = data.getNBMix(0, 12);
 
-            OGPoint3d OGvec = new OGPoint3d(x, y, z);
-            Point3d vec = new Point3d(x, y, z);
+            OGPoint3d OGpoint = new OGPoint3d(values[0], values[1], values[0]);
+            Point3d point = new Point3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
+            comparePointProperties(new OGPoint3d(OGpoint), new Point3d(point));
         }
 
         [Fact]
         public void ConstructorVectorPositive()
         {
-            double x = data.nbPos[rand.Next(0, 12)];
-            double y = data.nbPos[rand.Next(0, 12)];
-            double z = data.nbPos[rand.Next(0, 12)];
+            double[] values = data.getNBPos(0, 12);
 
-            OGVector3d OGvec = new OGVector3d(x, y, z);
-            Vector3d vector = new Vector3d(x, y, z);
+            OGVector3d OGvec = new OGVector3d(values[0], values[1], values[0]);
+            Vector3d vec = new Vector3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vector));
+            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
         }
 
         [Fact]
         public void ConstructorVectorNegative()
         {
-            double x = data.nbNeg[rand.Next(0, 12)];
-            double y = data.nbNeg[rand.Next(0, 12)];
-            double z = data.nbNeg[rand.Next(0, 12)];
+            double[] values = data.getNBNeg(0, 12);
 
-            OGVector3d OGvec = new OGVector3d(x, y, z);
-            Vector3d vector = new Vector3d(x, y, z);
+            OGVector3d OGvec = new OGVector3d(values[0], values[1], values[0]);
+            Vector3d vec = new Vector3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vector));
+            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
         }
 
         [Fact]
         public void ConstructorVectorMix()
         {
-            double x = data.nbMix[rand.Next(0, 12)];
-            double y = data.nbMix[rand.Next(0, 12)];
-            double z = data.nbMix[rand.Next(0, 12)];
+            double[] values = data.getNBMix(0, 12);
 
-            OGVector3d OGvec = new OGVector3d(x, y, z);
-            Vector3d vector = new Vector3d(x, y, z);
+            OGVector3d OGvec = new OGVector3d(values[0], values[1], values[0]);
+            Vector3d vec = new Vector3d(values[0], values[1], values[0]);
 
-            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vector));
+            comparePointProperties(new OGPoint3d(OGvec), new Point3d(vec));
         }
     }
 }
