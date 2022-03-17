@@ -210,7 +210,6 @@ C:/Users/OMRT/Desktop/OmrtGeometry/TestProject1/obj/Debug/net5.0/OGTests.genrunt
 /Users/renebraaksma/Desktop/OG/TestProject1/bin/Debug/net5.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/renebraaksma/Desktop/OG/TestProject1/bin/Debug/net5.0/OG.dll
 /Users/renebraaksma/Desktop/OG/TestProject1/bin/Debug/net5.0/OG.pdb
-/Users/renebraaksma/Desktop/OG/TestProject1/obj/Debug/net5.0/OGTests.csproj.AssemblyReference.cache
 /Users/renebraaksma/Desktop/OG/TestProject1/obj/Debug/net5.0/OGTests.GeneratedMSBuildEditorConfig.editorconfig
 /Users/renebraaksma/Desktop/OG/TestProject1/obj/Debug/net5.0/OGTests.AssemblyInfoInputs.cache
 /Users/renebraaksma/Desktop/OG/TestProject1/obj/Debug/net5.0/OGTests.AssemblyInfo.cs

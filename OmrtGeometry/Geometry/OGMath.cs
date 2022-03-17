@@ -32,5 +32,22 @@ namespace OG
             }
             return 1;
         }
+
+        public static decimal Truncate(double value, byte decimals = 6)
+        {
+            decimal d = (decimal)value;
+            decimal r = Math.Round(d, decimals);
+
+            if (d > 0 && r > d)
+            {
+                return r - new decimal(1, 0, 0, false, decimals);
+            }
+            if (d < 0 && r < d)
+            {
+                return r + new decimal(1, 0, 0, false, decimals);
+            }
+
+            return r;
+        }
     }
 }

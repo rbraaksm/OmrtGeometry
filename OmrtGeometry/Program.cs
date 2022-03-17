@@ -1,9 +1,15 @@
 ﻿using System;
 using OGPoint3d = OG.Point3d;
 using OGBoundingBox = OG.BoundingBox;
+using OGPolyline = OG.Polyline;
+using OGPoint3dList = OG.Point3dList;
 
+using Polyline = Rhino.Geometry.Polyline;
 using Point3d = Rhino.Geometry.Point3d;
 using BoundingBox = Rhino.Geometry.BoundingBox;
+using Point3dList = Rhino.Collections.Point3dList;
+using System.Collections.Generic;
+using OG;
 
 namespace OmrtGeometry
 {
@@ -11,33 +17,20 @@ namespace OmrtGeometry
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-            double[] minValues = new double[3];
-            minValues[0] = random.NextDouble() * 50;
-            minValues[1] = random.NextDouble() * 50;
-            minValues[2] = random.NextDouble() * 50;
+            Random rand = new Random();
 
-            double[] maxValues = new double[3];
-            maxValues[0] = random.NextDouble() * 50;
-            maxValues[1] = random.NextDouble() * 50;
-            maxValues[2] = random.NextDouble() * 50;
+            var number = rand.Next(1, int.MaxValue - 1);
+            OGPoint3dList OG = new OGPoint3dList(number);
+            Point3dList rhino = new Point3dList(number);
 
+            Console.WriteLine(OG.Capacity);
+            Console.WriteLine(rhino.Capacity);
 
-            OGPoint3d min = new OGPoint3d(minValues[0], minValues[1], minValues[2]);
-            OGPoint3d max = new OGPoint3d(maxValues[0], maxValues[1], maxValues[2]);
-
-            Point3d min1 = new Point3d(minValues[0], minValues[1], minValues[2]);
-            Point3d max2 = new Point3d(maxValues[0], maxValues[1], maxValues[2]);
-
-
-            OGBoundingBox bb = new OGBoundingBox(min, max);
-            BoundingBox rhino = new BoundingBox(min1, max2);
-
-            Console.WriteLine(bb.IsValid);
-            Console.WriteLine(rhino.IsValid);
-
-            Console.WriteLine(bb.Area);
-            Console.WriteLine(rhino.Area);
+            Console.WriteLine(OG.Count);
+            Console.WriteLine(rhino.Count);
+            //data.compareBoundingBoxProperties(OG.BoundingBox, rhino.BoundingBox);
+            //Assert.Equal(OG.Capacity, rhino.Capacity);
+            //Assert.Equal(OG.Count, rhino.Count);
         }
     }
 }

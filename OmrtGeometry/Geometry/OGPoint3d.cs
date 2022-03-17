@@ -127,5 +127,14 @@ namespace OG
             Y = y;
             Z = z;
         }
+
+
+        // METHODS
+
+        public override string ToString()
+        {
+            return $"{OGMath.Truncate(X)},{OGMath.Truncate(Y)},{OGMath.Truncate(Z)}";
+        }
+
     }
 }

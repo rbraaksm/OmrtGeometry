@@ -1,21 +1,17 @@
 ﻿<Properties StartupConfiguration="{21F7D819-86D5-466F-964A-57549557D832}|Default">
   <MonoDevelop.Ide.ItemProperties.OmrtGeometry PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.OG PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestProject1/TestData.cs">
-    <Files>
-      <File FileName="OmrtGeometry/Program.cs" Line="34" Column="59" />
-      <File FileName="TestProject1/TestData.cs" Line="65" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="OG" expanded="True">
             <Node name="OG" expanded="True">
-              <Node name="Geometry" expanded="True" />
+              <Node name="Geometry" expanded="True">
+                <Node name="OGPolyline.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="OGTests" expanded="True">
-              <Node name="TestData.cs" selected="True" />
-            </Node>
+            <Node name="OGTests" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -24,9 +20,10 @@
           <Node name="OG" expanded="True">
             <Node name="OGTests" expanded="True">
               <Node name="OGTests" expanded="True">
-                <Node name="BoundingBoxConstructorsAndProperties" expanded="True" selected="True" />
-                <Node name="PointConstructorsAndProperties" expanded="True" />
-                <Node name="VectorConstructorsAndProperties" expanded="True" />
+                <Node name="Point3dListConstructorsAndProperties" expanded="True">
+                  <Node name="ConstructorInt32" selected="True" />
+                </Node>
+                <Node name="PolylineConstructorsAndProperties" expanded="True" />
               </Node>
             </Node>
           </Node>

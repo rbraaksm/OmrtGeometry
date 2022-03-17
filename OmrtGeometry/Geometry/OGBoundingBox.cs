@@ -32,6 +32,11 @@ namespace OG
         public Vector3d Diagonal => new Vector3d(Max[0] - Min[0], Max[1] - Min[1], Max[2] - Min[2]);
 
         /// <summary>
+        /// Gets an [Empty] bounding box. An Empty box is an invalid structure that has negative width.
+        /// </summary>
+        public static BoundingBox Empty => new BoundingBox(1, 0, 0, -1, 0, 0);
+
+        /// <summary>
         /// Gets a value that indicates whether or not this bounding box is valid. Empty boxes are not valid, and neither are boxes with unset points
         /// </summary>
         public bool IsValid => Min.IsValid && Max.IsValid && Min[0] <= Max[0] && Min[1] <= Max[1] && Min[2] <= Max[2];

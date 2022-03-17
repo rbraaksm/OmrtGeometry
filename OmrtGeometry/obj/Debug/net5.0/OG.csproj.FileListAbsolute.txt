@@ -30,7 +30,6 @@ C:/Users/OMRT/Desktop/OmrtGeometry/OmrtGeometry/obj/Debug/net5.0/OG.genruntimeco
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/bin/Debug/net5.0/OG.pdb
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/bin/Debug/net5.0/GShark.dll
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/bin/Debug/net5.0/Rhino3dmIO.dll
-/Users/renebraaksma/Desktop/OG/OmrtGeometry/obj/Debug/net5.0/OG.csproj.AssemblyReference.cache
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/obj/Debug/net5.0/OG.GeneratedMSBuildEditorConfig.editorconfig
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/obj/Debug/net5.0/OG.AssemblyInfoInputs.cache
 /Users/renebraaksma/Desktop/OG/OmrtGeometry/obj/Debug/net5.0/OG.AssemblyInfo.cs
